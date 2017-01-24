@@ -6,6 +6,7 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+$nudge:            10px !default;
 $spacing-unit:     30px !default;
 $header-height:    56px !default;
 
@@ -38,7 +39,7 @@ $on-laptop:        800px !default;
 
 // Support vendor prefixes for transitions like so:
 // a {
-//   @include transition(background-color 0.5s color 2s)
+//   @include transition(all .2s)
 // }
 //
 //
