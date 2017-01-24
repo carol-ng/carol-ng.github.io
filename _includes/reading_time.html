@@ -1,0 +1,13 @@
+<span class="reading-time" title="Reading time: ">
+  {% if post.content %}
+  {% assign words = post.content | number_of_words %}
+  {% else %}
+  {% assign words = page.content | number_of_words %}
+  {% endif %}
+
+  {% if words < 270 %}
+    1 minute
+  {% else %}
+    {{ words | divided_by:130 }} minutes
+  {% endif %}
+</span>
